@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Alata&family=Inter:wght@600&family=Josefin+Sans:wght@300&family=League+Spartan:wght@400;500;700&family=Manrope:wght@300&family=Open+Sans:wght@400;700&family=Poppins:wght@400;500;600;700;800&family=Sen:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: non;
+    border-width: thin;
+    padding: 10px 20px;
+}
+
+body {
+    font-family: Josefin sans, alata;
+    overflow-x: hidden;
+}
+
+.app {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    background-image: url(/images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 25rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+nav img {
+    width: 200px;
+    height: 30px;
+}
+
+.navigation ul i {
+    display: none;
+}
+
+ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.immersive {
+    position: absolute;
+    color: white;
+    border: 2px white solid;
+    padding: 20px;
+    padding-right: 70px;
+    left: 40px;
+    top: 100px;
+}
+
+.features img {
+    width: 500px;
+}
+
+.features {
+    display: flex;
+    align-items: flex-end;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Working Here!*/
+
+.vr-feature {
+    position: absolute;
+    background-color: white;
+    left: 400px;
+    bottom: 0px;
+    padding-top: 50px;
+    padding-left: 60px;
+}
+
+.features p {
+    padding-top: 20px;
+}
+
+.grid-class {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.grid-class button {
+    padding: 10px 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 50px;
+}
+
+.creation-class {
+    margin-top: 100px;
+}
+
+.creation {
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.img-container {
+    width: 120px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.socials p {
+    padding-top: 30px;
+}
+
+.contact-flex ul {
+    padding-top: 30px;
+}
+
+.contact-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+li i {
+    color: white;
+}
+
+.mobile-img {
+    display: none;
+    visibility: hidden;
+}
+
+.button-tag {
+    display: none;
+    visibility: hidden;
+}
+
+@media(max-width:900px) {
+    nav ul li {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .navigation ul i {
+        visibility: visible;
+        display: flex;
+    }
+
+    .immersive {
+        margin: 0 auto;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        left: 0;
+        right: 0;
+    }
+
+    .features img {
+        width: 100%;
+    }
+
+    .vr-feature {
+        position: static;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        /* line-height: 25px; */
+    }
+
+    .vr-feature h1 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .vr-feature p {
+        line-height: 25px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .mobile-img {
+        visibility: visible;
+        display: grid;
+        gap: 30px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        display: none;
+        justify-content: flex-start;
+        visibility: hidden;
+    }
+
+    .creation {
+        width: 100%;
+        margin: 0 auto;
+        justify-content: flex-end;
+
+    }
+
+    .creation-class {
+        width: 100%;
+    }
+
+    .creation-class button {
+        visibility: hidden;
+        display: none;
+    }
+
+    .grid-class h2 {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .deep {
+        background-image: url(/images/mobile/image-deep-earth.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 90px;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .night {
+        background-image: url(/images/mobile/image-night-arcade.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 90px;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .soccer {
+        background-image: url(/images/mobile/image-soccer-team.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 90px;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .grid {
+        background-image: url(/images/mobile/image-grid.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 90px;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .above {
+        background-image: url(/images/mobile/image-from-above.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 40px;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .pocket {
+        background-image: url(/images/mobile/image-pocket-borealis.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 100px;
+        padding: 90px;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .curiosity {
+        background-image: url(/images/mobile/image-curiosity.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 90px;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .fisheye {
+        background-image: url(/images/mobile/image-fisheye.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 90px;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .mobile-img {
+        margin-bottom: 50px;
+    }
+
+    .mobile-button {
+        background-color: aqua;
+    }
+
+    .footer-flex {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .contact-flex ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    .socials ul {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .button-tag {
+        display: flex;
+        justify-content: center;
+        visibility: visible;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
